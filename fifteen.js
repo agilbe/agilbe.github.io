@@ -143,12 +143,12 @@
 		//document.getElementById("controls").appendChild(document.createTextNode("times"));
 		var onceOnly = document.createElement('option');
 		onceOnly.value = 1;
-		onceOnly.innerHTML = 1 + " time";
+		onceOnly.innerHTML = 1 + " move";
 		selector2.appendChild(onceOnly);
 		for (var i = 2; i <= 10; i+=2) {
 		    var option = document.createElement('option');
 		    option.value =  (100 * i);
-		    option.innerHTML = (100 * i + " times");
+		    option.innerHTML = (100 * i + " moves");
 		    if (option.value == 1000) {
 		    	option.selected = "selected";
 		    }
