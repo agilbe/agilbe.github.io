@@ -1,0 +1,33 @@
+/*Alex Gilbert
+CSE 154 AH
+Winter 2016
+
+This is the css page which adds some style to my Fifteen Puzzle.*/
+
+body {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;
+}
+
+#controls {
+	clear: both;
+}
+
+#puzzlearea {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+}
+
+.tile {
+	height: 90px;
+	width: 90px;
+	border: 5px solid black;
+	font-size: 40pt;
+}
+
+#selector {
+	margin: auto;
+}
