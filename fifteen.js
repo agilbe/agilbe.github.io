@@ -217,7 +217,7 @@ Extra feature implemented: background chooser/multiple backgrounds */
 		newDiv.id = "winner";
 		newDiv.appendChild(document.createTextNode("Congratulations, a winner is you!"));
 		document.body.insertBefore(newDiv, document.getElementById("selectImage"));
-		document.body.style.backgroundImage = "url('http://i.imgur.com/rn0jwDl.png')";
+		document.body.style.backgroundImage = "url('winner.png')";
 		//document.body.style.backgroundAttachment = "fixed";
 		document.body.style.color = "black";
 	}
