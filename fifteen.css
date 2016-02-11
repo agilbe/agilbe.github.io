@@ -36,3 +36,9 @@ body {
 #selector {
 	margin: auto;
 }
+
+#selector2 {
+	margin: auto;
+	margin-left: 5px;
+	margin-right: 5px;
+}

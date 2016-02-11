@@ -54,7 +54,8 @@
 	//This function shuffles the tiles by moving a random square that is
 	//adjacent to the blank square into that square... over and over.
 	function shuffleTiles() {
-		for (var j = 0; j < 1000; j++) {
+		var shuffles = document.getElementById("selector2").value;
+		for (var j = 0; j < shuffles; j++) {
 			var neighbors = [];
 			var movable = document.querySelectorAll(".tile");
 			for (var i = 0; i < movable.length; i++) {
@@ -135,6 +136,24 @@
 	//Creates the dropdown menu and its options, as well as its 
 	//own div between the puzzle area and the shuffle button.
 	function dropDown() {
+		//This adds a dropdown to select the amount of times the puzzle will be shuffled.
+		var selector2 = document.createElement("select");
+		selector2.id = "selector2";
+		document.getElementById("controls").appendChild(selector2);
+		document.getElementById("controls").appendChild(document.createTextNode("times"));
+		var onceOnly = document.createElement('option');
+		onceOnly.value = 1;
+		onceOnly.innerHTML = 1;
+		selector2.appendChild(onceOnly);
+		for (var i = 2; i <= 10; i+=2) {
+		    var option = document.createElement('option');
+		    option.value =  (100 * i);
+		    option.innerHTML = (100 * i);
+		    if (option.value == 1000) {
+		    	option.selected = "selected";
+		    }
+		    selector2.appendChild(option);
+		}
 		//This adds a div with a selector after the puzzle & before the shuffle button
 		var newDiv = document.createElement("div");
 		newDiv.id = "selectImage";
