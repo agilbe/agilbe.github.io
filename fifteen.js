@@ -219,7 +219,7 @@ Extra feature implemented: background chooser/multiple backgrounds */
 		document.body.insertBefore(newDiv, document.getElementById("selectImage"));
 		document.body.style.backgroundImage = "url('http://i.imgur.com/rn0jwDl.png')";
 		//document.body.style.backgroundAttachment = "fixed";
-		document.body.style.color = "white";
+		document.body.style.color = "black";
 	}
 
 })();
