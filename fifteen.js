@@ -199,12 +199,12 @@ Extra feature implemented: background chooser/multiple backgrounds */
 		for (var i = 0; i < NUM_RC; i++) {
 			for (var j = 0; j < NUM_RC; j++) {
 				if (NUM_RC*NUM_RC > counter) {
-					var tile = document.getElementById("square_" + j + "_" + i)
+					var tile = document.getElementById("square_" + j + "_" + i);
 					if (!tile || tile.innerHTML != counter)  {
 						return false;
 					}
 				}
-			counter++
+			counter++;
 			}
 		}
 		return true;
