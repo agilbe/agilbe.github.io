@@ -1,13 +1,6 @@
 "use strict";
 
-/*Alex Gilbert
-CSE 154 AH
-Winter 2016
-
-This is the javascript page which adds functionality (and some style) 
-to my Fifteen Puzzle.
-
-Extra feature implemented: background chooser/multiple backgrounds */
+/*Alex Gilbert*/
 
 (function() {
 	var EMPTY_ROW = 3; //row position of the empty square
