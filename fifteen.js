@@ -128,7 +128,8 @@ to my Fifteen Puzzle.*/
 		newDiv.id = "selectImage";
 		var selector = document.createElement("select");
 		selector.id = "selector";
-		newDiv.appendChild(document.createTextNode("Choose a background!"));
+		newDiv.appendChild(document.createElement("br"));
+		newDiv.appendChild(document.createTextNode("Choose a background:"));
 		newDiv.appendChild(document.createElement("br"));
 		newDiv.appendChild(selector);
 		document.body.insertBefore(newDiv, document.getElementById("controls"));

@@ -5,9 +5,12 @@ Winter 2016
 This is the css page which adds some style to my Fifteen Puzzle.*/
 
 body {
-	font-family: cursive;
+	font-family: default;
 	font-size: 14pt;
 	text-align: center;
+	background-image: url("backgroundimage.jpg");
+	background-attachment: fixed;
+	color: white;
 }
 
 #controls {
@@ -19,6 +22,8 @@ body {
 	width: 400px;
 	height: 400px;
 	margin: auto;
+	font-family: cursive;
+	color: black;
 }
 
 .tile {
