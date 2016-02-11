@@ -5,7 +5,9 @@ CSE 154 AH
 Winter 2016
 
 This is the javascript page which adds functionality (and some style) 
-to my Fifteen Puzzle.*/
+to my Fifteen Puzzle.
+
+Extra feature implemented: background chooser/multiple backgrounds */
 
 (function() {
 	var EMPTY_ROW = 3; //row position of the empty square
@@ -79,10 +81,19 @@ to my Fifteen Puzzle.*/
 	//It either takes in a parameter or is called on event.
 	function moveToEmpty(squareID) {
 		var square = this;
+		var isParameter = false;
+		//This if statement checks whether the user has already won.
+		//If so, it clears the congratulatory message.
+		if (document.getElementById("winner")){
+			var element = document.getElementById("winner");
+			element.parentNode.removeChild(element);
+			document.body.style.backgroundImage = url("backgroundimage.jpg");
+		}
 		//This if statement checks whether it's taking in a parameter
 		//or being called as response to an .onclick
 		if ((typeof squareID) == "string") {
 			square = document.getElementById(squareID);
+			isParameter = true;
 		}
 		var oldEmptyRow = EMPTY_ROW;
 		var oldEmptyColumn = EMPTY_COLUMN;
@@ -94,7 +105,14 @@ to my Fifteen Puzzle.*/
 			EMPTY_ROW = currentTileRow; //updated with the new empty position
 			EMPTY_COLUMN = currentTileColumn;
 			square.id = "square_" + oldEmptyRow + "_" + oldEmptyColumn;
+			if (!isParameter) {
+				if (checkSolved()) {
+					//alert("u win");
+					displayWin();
+				}
+			}
 		}
+		
 	}
 
 	//Colors the number and border and changes the pointer
@@ -128,8 +146,7 @@ to my Fifteen Puzzle.*/
 		newDiv.id = "selectImage";
 		var selector = document.createElement("select");
 		selector.id = "selector";
-		newDiv.appendChild(document.createElement("br"));
-		newDiv.appendChild(document.createTextNode("Choose a background:"));
+		newDiv.appendChild(document.createTextNode("Choose a background!"));
 		newDiv.appendChild(document.createElement("br"));
 		newDiv.appendChild(selector);
 		document.body.insertBefore(newDiv, document.getElementById("controls"));
@@ -140,10 +157,11 @@ to my Fifteen Puzzle.*/
 		originalBackground.selected = "selected";
 		selector.appendChild(originalBackground);
 		//adding additional backgrounds using absolute URLs
+		var websterURL = "https://webster.cs.washington.edu/students/agilbe/hw4/";
 		var numAdditionalBackgrounds = 4;
 		for (var i = 1; i <= numAdditionalBackgrounds; i++) {
 		    var opt = document.createElement('option');
-		    opt.value = "background" + (i + 1) + ".gif";
+		    opt.value = websterURL + "background" + (i + 1) + ".gif";
 		    opt.innerHTML = "background" + (i + 1) + ".gif";
 		    selector.appendChild(opt);
 		}
@@ -170,6 +188,36 @@ to my Fifteen Puzzle.*/
 				return true;
 			}
 		}
+	}
+
+	//This function checks if the puzzle has been solved by comparing the innerHTML of
+	//each square to a counter, returning false if there is a null (indicating that
+	//the tile('s id) doesn't exist)) 
+	function checkSolved() {
+		var counter = 1;
+		for (var i = 0; i < NUM_RC; i++) {
+			for (var j = 0; j < NUM_RC; j++) {
+				if (NUM_RC*NUM_RC > counter) {
+					var tile = document.getElementById("square_" + j + "_" + i)
+					if (!tile || tile.innerHTML != counter)  {
+						return false;
+					}
+				}
+			counter++
+			}
+		}
+		return true;
+	}
+
+	//This function adds a div if the puzzle has been completed
+	//in order to congratulate the user.
+	function displayWin() {
+		var newDiv = document.createElement("div");
+		newDiv.id = "winner";
+		newDiv.appendChild(document.createTextNode("Congratulations, a winner is you!"));
+		document.body.insertBefore(newDiv, document.getElementById("selectImage"));
+		document.body.style.backgroundImage = "url('http://i.imgur.com/rn0jwDl.png')";
+		//document.body.style.backgroundAttachment = "fixed";
 	}
 
 })();
