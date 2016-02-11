@@ -151,11 +151,11 @@
 		originalBackground.selected = "selected";
 		selector.appendChild(originalBackground);
 		//adding additional backgrounds using absolute URLs
-		var websterURL = "https://webster.cs.washington.edu/students/agilbe/hw4/";
+		//var websterURL = "https://webster.cs.washington.edu/students/agilbe/hw4/";
 		var numAdditionalBackgrounds = 4;
 		for (var i = 1; i <= numAdditionalBackgrounds; i++) {
 		    var opt = document.createElement('option');
-		    opt.value = websterURL + "background" + (i + 1) + ".gif";
+		    opt.value = "background" + (i + 1) + ".gif";
 		    opt.innerHTML = "background" + (i + 1) + ".gif";
 		    selector.appendChild(opt);
 		}
