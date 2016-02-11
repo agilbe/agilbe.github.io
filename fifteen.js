@@ -87,7 +87,8 @@ Extra feature implemented: background chooser/multiple backgrounds */
 		if (document.getElementById("winner")){
 			var element = document.getElementById("winner");
 			element.parentNode.removeChild(element);
-			document.body.style.backgroundImage = url("backgroundimage.jpg");
+			document.body.style.backgroundImage = "url('backgroundimage.jpg')";
+			document.body.style.color = "white";
 		}
 		//This if statement checks whether it's taking in a parameter
 		//or being called as response to an .onclick
@@ -218,6 +219,7 @@ Extra feature implemented: background chooser/multiple backgrounds */
 		document.body.insertBefore(newDiv, document.getElementById("selectImage"));
 		document.body.style.backgroundImage = "url('http://i.imgur.com/rn0jwDl.png')";
 		//document.body.style.backgroundAttachment = "fixed";
+		document.body.style.color = "white";
 	}
 
 })();
