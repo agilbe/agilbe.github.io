@@ -16,6 +16,10 @@ body {
 }
 
 #mystuff a {
-	padding-left: 7.5%;
-	padding-right: 7.5%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+}
+
+h2 {
+	font-weight: normal;
 }
