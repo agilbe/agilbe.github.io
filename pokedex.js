@@ -36,6 +36,7 @@
 		var pokeInfo = JSON.parse(this.responseText).results;
 		var pokeArray = [];
 		var urlArray = [];
+		var nameArray = [];
 		for (var i = 0; i < pokeInfo.length; i++) {
 			pokeArray.push(pokeInfo[i].name);
 			urlArray.push(pokeInfo[i].url);
@@ -64,7 +65,7 @@
 				pokeName=="gourgeist-average") {
 				pokeName = printUntil(pokeName, "-");
 			}
-			//pokeDiv.innerHTML = pokeArray[i];
+			nameArray.push(pokeName);
 			pokeDiv.id = urlArray[i].slice(33,-1);
 			var pokeImg = document.createElement("img");
 			pokeImg.src = "http://www.pokestadium.com/sprites/xy/" + pokeName + ".gif";
@@ -88,7 +89,7 @@
 	}
 
 	function showData() {
-		alert(this.id);
+		alert("fuck you, this Pokemon is #" + this.id + " in the national Pokedex");
 	}
 
 
