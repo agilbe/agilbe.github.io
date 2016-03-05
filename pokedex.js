@@ -72,7 +72,22 @@
 			$("picker").appendChild(pokeDiv);
 			pokeDiv.appendChild(pokeImg);	
 			pokeDiv.appendChild(pokeTitle);
+			pokeDiv.onmouseover = point;
+			pokeDiv.onmouseout = unpoint;
+			pokeDiv.onclick = showData;
 		}
+	}
+
+	function point() {
+		this.style.cursor = "pointer";
+	}
+
+	function unpoint() {
+		this.style.cursor = "default";	
+	}
+
+	function showData() {
+		alert(this.id);
 	}
 
 
