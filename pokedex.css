@@ -1,0 +1,90 @@
+body {
+	background-color: #662200;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin: 0px;
+}
+
+#back {
+	border: lightgray solid 2px;
+	bottom: 5px;
+	color: #974455;
+	font-size: 18pt;
+	right: 10%;
+	padding: 3px;
+	position: absolute;
+	display: none;
+}
+
+#header {
+	/*background-image: url("");*/
+	box-shadow: 0 5px 5px lightgray;
+	height: 104px;
+	position: relative;
+}
+
+#header > #title {
+	bottom: 15px;
+	font-size: 36pt;
+	
+}
+
+#header > div {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 20%;
+	margin: 0 auto;
+	color: white;
+	font-family: Tahoma, sans-serif;
+	text-align: center;
+}
+
+#header > div > span {
+	font-weight: bold;
+}
+
+#header > #underHead {
+	font-size: 15pt;
+	bottom: 0px;
+	
+}
+
+#picker {
+	border: white solid 1px;
+	margin-left: 2.5%;
+	width: 15%;
+	float: left;
+	height: 825px;
+	overflow-y : scroll;
+	padding: 1%;
+	min-width: 10%;
+}
+
+#picker * {
+	color: white;
+	margin-left: 2.5%;
+	height: 60px;
+
+}
+
+#picker > div {
+	border-bottom: lightgray solid 1px;
+}
+
+#1 {
+	border-top: lightgray solid 1px;
+}
+
+#picker > div > img {
+	height: 100%;
+	width: 25%;
+	object-fit: scale-down;
+	float: left;
+}
+
+#picker > div > span {
+	display: inline-block;
+	width: 50%;
+	padding-top: 20px;
+	padding-bottom: -20px;
+}
