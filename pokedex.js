@@ -3,6 +3,7 @@
 
 	var BASE_URL = "http://pokeapi.co/api/v2/";
 	var BASE_URL_OLD = "http://pokeapi.co/api/v1/";
+	var CHANGED_URL = "http://pokeapi.co/api/v2/pokemon/?limit=100000";
 
 	window.onload = function() {
 		loadPokes();
@@ -28,11 +29,11 @@
 	}
 
 	function loadPokes() {
-		ajaxHelper(displayPokes, BASE_URL + "pokemon/");
+		ajaxHelper(displayPokes, CHANGED_URL);
 	}
 
 	function displayPokes() {
-		var pokeInfo = JSON.parse(this.responseText);
+		var pokeInfo = JSON.parse(this.responseText).results;
 		var pokeArray = [];
 		var urlArray = [];
 		for (var i = 0; i < pokeInfo.length; i++) {
