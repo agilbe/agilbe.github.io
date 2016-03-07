@@ -1,0 +1,51 @@
+body {
+	/*background-color: #662200;*/
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin: 0px;
+}
+
+#back {
+	border: black solid 2px;
+	bottom: 5px;
+	/*color: #974455;*/
+	font-size: 18pt;
+	right: 10%;
+	padding: 3px;
+	position: absolute;
+	display: none;
+}
+
+
+#header {
+	/*background-image: url("");*/
+	box-shadow: 0 5px 5px black;
+	height: 104px;
+	position: relative;
+}
+
+#header > #title {
+	bottom: 25px;
+	font-size: 36pt;
+	
+}
+
+#header > div {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin: 0 auto;
+	color: black;
+	font-family: Tahoma, sans-serif;
+	text-align: center;
+}
+
+#header > div > span {
+	font-weight: bold;
+}
+
+#header > #underHead {
+	font-size: 15pt;
+	bottom: 0px;
+	
+}
