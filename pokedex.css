@@ -15,6 +15,7 @@ body {
 	display: none;
 }
 
+
 #header {
 	/*background-image: url("");*/
 	box-shadow: 0 5px 5px lightgray;
@@ -49,30 +50,61 @@ body {
 	
 }
 
+#intro {
+	text-align: center;
+	width: 100%;
+	color: white;
+	padding-top: 400px;
+}
+
+#intro > span {
+	font-weight: bold;
+}
+
+#main {
+	border: white solid 1px;
+	width: 75%
+	max-width: 75%;
+	margin-left: 15%;
+	color: white;
+	height: 825px;
+	/*overflow-y : scroll;*/
+	overflow: auto;
+	padding: 1%;
+	/*display: inline-block;*/
+	margin-right: -20px;
+}
+
+#main img {
+	object-fit: scale-down;
+}
+
 #picker {
 	border: white solid 1px;
-	margin-left: 2.5%;
+	/*margin-left: 2.5%;*/
 	width: 15%;
 	float: left;
 	height: 825px;
-	overflow-y : scroll;
+	/*overflow-y : scroll;*/
+	overflow: auto;
 	padding: 1%;
 	min-width: 10%;
+	max-width: 15%;
+	/*visibility: hidden;*/
+	overflow-y: scroll;
 }
 
 #picker * {
 	color: white;
 	margin-left: 2.5%;
 	height: 60px;
+	/*visibility: visible;*/
+
 
 }
 
 #picker > div {
 	border-bottom: lightgray solid 1px;
-}
-
-#1 {
-	border-top: lightgray solid 1px;
 }
 
 #picker > div > img {
@@ -87,4 +119,27 @@ body {
 	width: 50%;
 	padding-top: 20px;
 	padding-bottom: -20px;
+}
+
+
+#search {
+	background-color: black;
+	width: 90%;
+	text-align: center;
+	padding: 2.5%;
+	margin-left: 2.5%;
+	height: 30px;
+	/*margin-left: 0%;*/
+	border: none;
+	color: transparent;
+	text-shadow: 0 0 0 white;
+	text-align: center;
+	outline: none;
+}
+
+}
+
+#tester {
+	clear: both;
+	color: white;
 }
