@@ -3,13 +3,15 @@
 
 	var keyArray = [];
 	var defArray = [];
-	var images = ['pr0.png', 'pr1.png', 'pr2.png', 'pr3.png', 'pr4.png', 'pr5.png',]
+	var images = ['pr0.png', 'pr1.png', 'pr2.png', 'pr3.png', 'pr4.png', 'pr5.png'];
 	var count = 0;
 	
 
 	window.onload = function() {
 		loadTeams();
 		document.onclick = showTeams2;
+		$("mute").onclick = muteMusic;
+		$("play").onclick = playMusic;
 	};
 
 	function $(element) {
@@ -36,6 +38,19 @@
 		showTeams();
 	}
 
+	function muteMusic() {
+		$("video").innerHTML = "";
+		$("mute").style.display = "none";
+		$("play").style.display = "block";
+	}
+
+
+	function playMusic() {
+		$("video").innerHTML = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/-zEGgsDI8l0?autoplay=1&loop=1&playlist=-zEGgsDI8l0" frameborder="0" allowfullscreen></iframe>';
+		$("play").style.display = "none";
+		$("mute").style.display = "block";
+	}
+
 	function showTeams2() {
 		$("main").innerHTML = "";
 		showTeams();
@@ -43,7 +58,7 @@
 			showPic();	
 		}
 		if (count == 1) {
-			$("video").innerHTML = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/-zEGgsDI8l0?autoplay=1&loop=1&playlist=-zEGgsDI8l0" frameborder="0" allowfullscreen></iframe>'
+			playMusic();
 		}
 		count++;
 	}
@@ -55,7 +70,7 @@
 		prImg.src = images[randomImage];
 		prDiv.appendChild(prImg);
 		prDiv.style.display = "inline=block";
-		prDiv.position = "absolute";
+		prDiv.style.position = "absolute";
 		prDiv.style.top = Math.round(Math.floor(Math.random() * 850)) + "px";
 		var test = Math.round(Math.floor(Math.random() * 3));
 		if (test == 1) {

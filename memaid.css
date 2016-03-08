@@ -12,14 +12,31 @@ body {
                                   not supported by any browser */
 }
 
-#back {
-	border: black solid 2px;
+#mute {
+	border: white solid 2px;
 	bottom: 5px;
 	/*color: #974455;*/
 	font-size: 18pt;
 	right: 10%;
 	padding: 3px;
 	position: absolute;
+	color: white;
+	z-index: 10;
+	background-color: black;
+	display: none;
+}
+
+#play {
+	border: white solid 2px;
+	bottom: 5px;
+	/*color: #974455;*/
+	font-size: 18pt;
+	right: 10%;
+	padding: 3px;
+	position: absolute;
+	color: white;
+	z-index: 10;
+	background-color: black;
 	display: none;
 }
 
