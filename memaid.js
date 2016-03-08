@@ -42,6 +42,9 @@
 		if (count > 0) {
 			showPic();	
 		}
+		if (count == 1) {
+			$("video").innerHTML = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/-zEGgsDI8l0?autoplay=1&loop=1&playlist=-zEGgsDI8l0" frameborder="0" allowfullscreen></iframe>'
+		}
 		count++;
 	}
 
