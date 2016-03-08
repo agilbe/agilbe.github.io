@@ -24,7 +24,7 @@ body {
 }
 
 #header > #title {
-	bottom: 25px;
+	bottom: 27.5px;
 	font-size: 36pt;
 	
 }
@@ -46,6 +46,11 @@ body {
 
 #header > #underHead {
 	font-size: 15pt;
-	bottom: 0px;
+	bottom: 2.5px;
 	
+}
+
+#main {
+	height: 850px;
+	/*border: black solid 2px;*/
 }

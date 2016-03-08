@@ -1,7 +1,21 @@
 {
-  "forming": "Orientation, testing, and dependence. Members of a team may be identifying boundaries of both interpersonal and task behavior.",
-  "norming": "Often characterized by conflict and polarization around interpersonal issues, members may be experiencing resistance to group influence and task requirements in this stage.",
-  "storming": "Group cohesiveness is beginning to develop, new standards are beginning to evolve, and in the task realm, intimate and personal opinions are expressed.",
-  "performing": "Interpersonal structure becomes the tool of task activities. Roles become functional, and group energy is funneled into a task. Structural issues have been resolved, and the team can now become supportive of task performance.",
-  "adjourning": "The termination of roles along with completion of the task. :("
+  "if in the forming stage": "Members of a team may be identifying boundaries of both interpersonal and task behavior. Don't worry about being nervous, it's normal.",
+  "if in the norming stage": "Often characterized by conflict and polarization around interpersonal issues, members may be experiencing resistance to group influence and task requirements in this stage. Conflict is normal, stay calm!",
+  "if in the storming stage": "Group cohesiveness is beginning to develop, new standards are beginning to evolve, and in the task realm, intimate and personal opinions are expressed. Be excited, you're coming together!",
+  "if in the performing stage": "Interpersonal structure becomes the tool of task activities. Roles become functional, and group energy is funneled into a task. Structural issues have been resolved, and the team can now become supportive of task performance. This is where everyone shines.",
+  "if in the adjourning stage": "The termination of roles along with completion of the task. :( Don't cry because it's over, smile because it happened. Dr. Seuss said that, and he's a doctor.",
+  "remember 'yes, and'" : "A useful tactic when brainstorming, ensuring no ideas are shut down and everyone feels welcomed. Great in any situation!",
+  "let go of your agenda" : "Don't go in with unrealistic expectations of your teammates, and disregard preconceived notions.",
+  "listen in order to receieve" : "You can't learn if you're not absorbing knowledge!",
+  "build on what you receieve" : "You want to welcome every idea, so what better way to show that you welcome an idea than adding on?",
+  "you can't be wrong" : "You're an intelligent person and there are no stupid people or stupid ideas!",
+  "make your partner look brilliant" : "Your partner is essential - appreciate him or her, and show everyone that he or she deserves it!",
+  "keep moving forward" : "Don't cry over spilled milk.",
+  "get thicker skin" : "You may be wrong eventually, but it's not the end of the world!",
+  "find the second right answer" : "Sometimes, it's good to keep beating a dead horse. Options are good.",
+  "judge not" : "If you're judging, you're not using all your brainpower to brainstorm!",
+  "loosen up" : "You're not going to be punished for a slip up or doing something wrong, so don't worry about it so much.",
+  "understand culture" : "Different people have different styles and methods - don't be too quick to judge, and sympathizing with others' cultures can gain you respect.",
+  "(over)communicate" : "Communication is key - there's so much that can go wrong, and on top of that, people have to worry about communicating across languages and cultures. Better safe than sorry!"
+  
 }

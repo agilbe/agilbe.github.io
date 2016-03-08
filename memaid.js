@@ -46,6 +46,15 @@
 		defDiv.id = "def";
 		defDiv.style.textAlign = "center";
 		defDiv.innerHTML = defArray[rando];
+		titleDiv.style.position = "absolute";
+		titleDiv.style.top = "40%";
+		titleDiv.style.width = "100%";
+		titleDiv.style.textAlign = "center";
+		titleDiv.style.fontSize = "50pt";
+		defDiv.style.position = "absolute";
+		defDiv.style.top = "60%";
+		defDiv.style.width = "100%";
+		defDiv.style.textAlign = "center";
 		$("main").appendChild(titleDiv);
 		$("main").appendChild(defDiv);
 	}
