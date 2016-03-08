@@ -46,7 +46,14 @@
 
 
 	function playMusic() {
-		$("video").innerHTML = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/-zEGgsDI8l0?autoplay=1&loop=1&playlist=-zEGgsDI8l0" frameborder="0" allowfullscreen></iframe>';
+		var randomSong = Math.round(Math.floor(Math.random() * 2));
+		if (count == 1) {
+			$("video").innerHTML = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/DGEiRFK0Tpo?autoplay=1&start=3&loop=1&playlist=DGEiRFK0Tpo" frameborder="0" allowfullscreen></iframe>';
+		} else if (randomSong == 1) { 
+			$("video").innerHTML = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/3IcEBZuju5E?autoplay=1&start=79&loop=1&playlist=3IcEBZuju5E" frameborder="0" allowfullscreen></iframe>';
+		} else {
+			$("video").innerHTML = '<iframe width="1280" height="720" src="https://www.youtube.com/embed/DGEiRFK0Tpo?autoplay=1&start=3&loop=1&playlist=DGEiRFK0Tpo" frameborder="0" allowfullscreen></iframe>';
+		}
 		$("play").style.display = "none";
 		$("mute").style.display = "block";
 	}
