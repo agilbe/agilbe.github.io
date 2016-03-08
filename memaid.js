@@ -4,6 +4,7 @@
 	var keyArray = [];
 	var defArray = [];
 	var images = ['pr0.png', 'pr1.png', 'pr2.png', 'pr3.png', 'pr4.png', 'pr5.png',]
+	var count = 0;
 	
 
 	window.onload = function() {
@@ -38,7 +39,10 @@
 	function showTeams2() {
 		$("main").innerHTML = "";
 		showTeams();
-		showPic();
+		if (count > 0) {
+			showPic();	
+		}
+		count++;
 	}
 
 	function showPic() {
