@@ -2,6 +2,7 @@ body {
 	/*background-color: #662200;*/
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	margin: 0px;
+	background-image: url("city.jpg");
 	background-color: black;
 	-webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -13,8 +14,6 @@ body {
 }
 
 #header {
-	/*background-image: url("");*/
-	box-shadow: 0 3px 3px white;
 	height: 104px;
 	position: relative;
 }
@@ -42,11 +41,12 @@ h1 {
 }
 
 #main {
-	border: white solid 2px;
+	/*border: white solid 2px;*/
 	text-align: center;
 	margin: 0 auto;
 	height: 85vh;
 	width: 50%;
+	padding-top: 1vh;
 }
 
 iframe {
