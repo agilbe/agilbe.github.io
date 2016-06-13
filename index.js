@@ -27,6 +27,7 @@
 			//alert(examples[i].id);
 			var content = document.createElement("span");
 			content.style.width = 80/examples.length + "%";
+			content.style.margin ="0px 20px"
 			/*var link = document.createElement("link");
 			link.href = "#" + examples[i].id;
 			link.innerHTML = "test";

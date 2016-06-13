@@ -1,0 +1,9 @@
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#document {
+	padding-top: 1.5vh;
+	height: 95vh;
+}
