@@ -132,7 +132,8 @@ a {
 }
 
 body {
-  background-image: url('back2.jpg');
+  background-color: gray;
+  /*background-image: url('back2.jpg');*/
 }
 
 .emphasis {
