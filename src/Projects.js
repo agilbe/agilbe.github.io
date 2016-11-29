@@ -26,7 +26,6 @@ var Projects = React.createClass({
 			return(
 				<div className="projects container">
 					<div className="pageTitle">projects</div>
-					<div>always a work in progress!</div>
 					<div className="projectList">
 						{this.state.projectList.map(function(project, i){
 						return (<ProjectItem key={'project-' + i}
