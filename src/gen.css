@@ -1,0 +1,141 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.body {
+}
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+
+.leftPage {
+  width: 15vh;
+  float: left;
+  /*border: 1px solid black;*/
+  height: 85vh;
+  padding-top: 5.5%;
+}
+
+.pageName {
+  display: block;
+  height: 25%;
+
+}
+
+.projectTitle {
+  margin-bottom:0;
+}
+
+.about, .intro, .resume, .pageTitle{
+  text-align: right;
+}
+
+.projectItem {
+  margin-top: 2em;
+  width: 100%;
+  text-align: justify;
+  padding-bottom: 1em;
+  border-bottom: 1px solid black;
+}
+
+.pageTitle {
+  display: block;
+  margin-left: .5em;
+  font-size: 5em;
+  border-bottom: 2px solid black;
+}
+
+.App {
+  padding-left: 1em;
+}
+
+.projectList {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.icon {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.centerPic {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contactInfo {
+  font-size: 2em;
+  margin: 1em;
+  display: none;
+}
+
+#resumePDF {
+  width: 50em;
+}
+
+#resumePDF > p {
+  text-align: center
+}
+
+.resumeEmbed {
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.aboutMe {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+.me {
+  height: 11em;
+  width: 11em;
+}
+
+.bio {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 5vh;
+}
+
+body {
+  background-image: url('back2.jpg');
+}
+
+.emphasis {
+  font-size: 2rem;
+  font-weight: lighter;
+}
