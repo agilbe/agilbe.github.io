@@ -20,6 +20,7 @@ var About = React.createClass({
 		return(
 			<div className="about container">
 				<div className="pageTitle">contact</div>
+				<div>talk to me!</div>
 				<div className="centerPic" ><img className="icon" onMouseOver={event => this.phoneenter(event)} id="phone" src='data/phone.png' alt='phone' />
 				<img className="icon" onMouseOver={event => this.mailenter(event)} id="email" src='data/mail.png' alt='email' />
 				</div>
