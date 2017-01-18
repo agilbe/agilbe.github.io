@@ -2,19 +2,27 @@
   "projects": [
   {"title":"Learn Your Legends",
     "desc":"A web app which uses Riot Games' API to check game statistics based on username. Built using Python and hosted on Google's App Engine. I play way too much League of Legends for my own good, so I figured I'd channel that LoL excitement into something productive.",
-    "link":"http://www.learnyourlegends.appspot.com"
+    "link":"http://www.learnyourlegends.appspot.com",
+    "media":"", 
+    "medialink":""
   },
   {"title":"Democracy Evolved",
     "desc":"Infographic and website concept created for INFO 200 in Spring Quarter 2015 with Beth Patin. Won best in show at the end of the quarter! Our research found that it was incredibly hard for people who hadn't followed politics closely to obtain unbiased information on candidates and bills up for election; we envisioned Democracy Evolved as a one-stop hub for information on anything political.",
-    "link":"http://www.democracyevolved.org/"
+    "link":"http://www.democracyevolved.org/",
+    "media":"",
+    "medialink":""
   },
   {"title":"Howl's Moving Castle",
     "desc":"Designed and built a hub of a smart city for a physical computing course. Modeled after Howl's Moving castle, our project used two Arduino boards to make our castle respond to disaster alerts sent over radio waves. To accomplish this, we learned programming in C as well as how to work with electronics. We also 3D printed legs to make our castle move. It even plays Howl's Moving Castle's theme song!",
-    "link":"http://chin-gilbert.weebly.com/"
+    "link":"http://chin-gilbert.weebly.com/",
+    "media":"",
+    "medialink":""
   },
   {"title":"Tuber",
     "desc":"Design project completed for a user-centered design course. Tuber is intended to solve the problem of unreasonably long airport security checkpoints; our proposed system utilizes a TSA-run ride service which transports users to the airport and scans them and their luggage, allowing them to safely bypass the checkpoint. In the creation of Tuber, we practiced user research, creating personas, brainstorming scenarios and storyboarding them, as well as prototyping and creating mockups.",
-    "link":"http://tuberapp.weebly.com/"
+    "link":"http://tuberapp.weebly.com/",
+    "media":"",
+    "medialink":""
   }
   ]
   

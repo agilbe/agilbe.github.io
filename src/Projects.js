@@ -32,6 +32,8 @@ var Projects = React.createClass({
 							title={project.title}
 							link={project.link}
 							desc={project.desc}
+							media={project.media}
+							media-link={project.medialink}
 						/>)
 					})}
 					</div>

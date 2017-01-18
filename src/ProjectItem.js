@@ -1,5 +1,6 @@
 import React from 'react';
 
+//TODO: add in support for optional project/props media and media-link (additional picture/video)
 var ProjectItem = React.createClass({
 	render() {
 		return(
