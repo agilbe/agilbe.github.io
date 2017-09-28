@@ -1,3 +1,3 @@
-##My Portfolio (deprecated)
+## My Portfolio
 
 [agilbe.github.io](http://agilbe.github.io/#/)
